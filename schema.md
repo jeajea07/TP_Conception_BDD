@@ -14,3 +14,12 @@ CATEGORIE(**id_categorie**, designation)
 ### Question piège
 Au lieu d'ajouter un colonne categorie en VARCHAR dans plat j'ai créé une autre table categorie parce que cela facilite la manipulation et assure la réutilisation des table
 
+Exemple concret: quand on va ajouter un plat et categorie sera en champ de texte, on peut malsaisir cette catégorie 
+
+## Etape 03: Les commandes
+### Enregistrer les commandes
+COMMANDE(**id_commande**, dates)
+COMMANDE_PLAT(**id_commande_plat**, **#id_commande**, **#id_plat** quantite) 
+
+### Question piège
+Je crée une table d'association COMMANDE_PLAT et j'y mets la quantité
