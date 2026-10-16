@@ -29,3 +29,14 @@ Je crée une table d'association COMMANDE_PLAT et j'y mets la quantité
 CLIENT(**id_client**, nom, prenom)
 
 ### Question piège
+Non je n'ai pas mis NOT NULL la clé étrangère
+
+## Etape 05: Serveurs et tables
+### Ajouter tables et serveurs
+TABLE(**id_table**, numero, capacite)
+SERVEUR(**id_serveur**,nom,prenom)
+COMMANDE_TABLE_SERVEUR(**id_table_serveur**, **#id_table**, **#id_serveur**, **#id_commande**)
+
+### Question piège
+Une table c'est fixe, elle reste au gargotte 
+Une commande peut être apporté à la table ou à emporter, une commande peut varier
