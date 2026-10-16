@@ -18,8 +18,14 @@ Exemple concret: quand on va ajouter un plat et categorie sera en champ de texte
 
 ## Etape 03: Les commandes
 ### Enregistrer les commandes
-COMMANDE(**id_commande**, dates)
+COMMANDE(**id_commande**, #id_client, dates)
 COMMANDE_PLAT(**id_commande_plat**, **#id_commande**, **#id_plat** quantite) 
 
 ### Question piège
 Je crée une table d'association COMMANDE_PLAT et j'y mets la quantité
+
+## Etape 04: Les habitués
+### Ajouter les clients et rattacher les au commande
+CLIENT(**id_client**, nom, prenom)
+
+### Question piège
