@@ -40,3 +40,8 @@ COMMANDE_TABLE_SERVEUR(**id_table_serveur**, **#id_table**, **#id_serveur**, **#
 ### Question piège
 Une table c'est fixe, elle reste au gargotte 
 Une commande peut être apporté à la table ou à emporter, une commande peut varier
+
+## Etape 06: Les paiements
+### Enregister les paiements d'une commande
+TYPE_PAIEMENT(**id_type_paiement**, nom)
+PAIEMENT(**id_paiement**, #id_commande, #id_type_paiement, reference, montant, date)

@@ -28,3 +28,4 @@ JOIN commande ON commande_table_serveur.id_commande = commande.id_commande
 JOIN commande_plat ON commande.id_commande = commande_plat.id_commande
 JOIN plat ON commande_plat.id_plat = plat.id_plat
 GROUP BY serveur.id_serveur;
+
